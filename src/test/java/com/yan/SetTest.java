@@ -18,12 +18,12 @@ import com.yan.bean.B;
 import com.yan.bean.C;
 
 /**
- * @Description: HashSet测试类
+ * @Description: Set测试类
  * @author Yanjingyang
  * @date 2016年8月8日 下午4:42:42
  * @version 1.0
  */
-public class HashSetTest {
+public class SetTest {
 
 	@Before
 	public void setUp() throws Exception {
