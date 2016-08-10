@@ -3,6 +3,7 @@ package com.yan;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
 import java.util.function.UnaryOperator;
@@ -159,6 +160,26 @@ public class ListTest {
 
 		fixedList.add("疯狂Android讲义");
 		fixedList.remove("疯狂Java讲义");
+	}
+
+	@Test
+	public void test7() {
+		LinkedList<String> books = new LinkedList<String>();
+		books.offer("疯狂Java讲义");
+		books.push("轻量级Java EE企业应用实战");
+		books.offerFirst("疯狂Android讲义");
+
+		for (int i = 0; i < books.size(); i++) {
+			System.out.println("遍历中: " + books.get(i));
+		}
+
+		System.out.println(books.peekFirst());
+		System.out.println(books.peekLast());
+		System.out.println(books.pop());
+		System.out.println(books);
+		System.out.println(books.pollLast());
+		System.out.println(books);
+
 	}
 }
 
